@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/ivImagem"
+        android:layout_width="64dp"
+        android:tint="@color/colorAccent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_android_black" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/tvTitulo"
+        android:layout_width="0dp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Título"
+        app:layout_constraintLeft_toRightOf="@id/ivImagem"
+        app:layout_constraintBottom_toTopOf="@id/tvDescricao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+
+        android:id="@+id/tvDescricao"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tvTitulo"
+        android:layout_height="wrap_content"
+        android:text="Minha descricao"
+        app:layout_constraintLeft_toLeftOf="@id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+</android.support.constraint.ConstraintLayout>
