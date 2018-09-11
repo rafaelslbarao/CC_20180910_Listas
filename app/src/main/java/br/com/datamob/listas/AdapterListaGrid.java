@@ -17,7 +17,8 @@ public class AdapterListaGrid extends ArrayAdapter<Model>
     private int resource;
     private List<Model> list;
 
-    public AdapterListaGrid(@NonNull Context context, int resource, List<Model> list)
+    public AdapterListaGrid(@NonNull Context context, int resource
+            , List<Model> list)
     {
         super(context, resource, list);
         this.resource = resource;
@@ -26,7 +27,8 @@ public class AdapterListaGrid extends ArrayAdapter<Model>
 
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
+    public View getView(int position, @Nullable View convertView
+            , @NonNull ViewGroup parent)
     {
         if (convertView == null)
             convertView = criaView(parent);

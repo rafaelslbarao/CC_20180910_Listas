@@ -54,13 +54,15 @@ public class ListaActivity extends AppCompatActivity
                 if(checkedId == R.id.rbGrid)
                 {
                     lvInformacoes.setVisibility(View.GONE);
-                    gvInformacoes.setAdapter(new AdapterListaGrid(ListaActivity.this, R.layout.item_grid, list));
+                    gvInformacoes.setAdapter(new AdapterListaGrid(ListaActivity.this,
+                            R.layout.item_grid, list));
                     gvInformacoes.setVisibility(View.VISIBLE);
                 }
                 else
                 {
                     gvInformacoes.setVisibility(View.GONE);
-                    lvInformacoes.setAdapter(new AdapterListaGrid(ListaActivity.this, R.layout.item_lista, list));
+                    lvInformacoes.setAdapter(new AdapterListaGrid(ListaActivity.this,
+                            R.layout.item_lista, list));
                     lvInformacoes.setVisibility(View.VISIBLE);
                 }
             }
@@ -88,39 +90,43 @@ public class ListaActivity extends AppCompatActivity
     private void criaLista()
     {
         list = new ArrayList<>();
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Título 1", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título Legal", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Meu Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_child_care_black, "Testando", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Meu Teste Legal", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título 2", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Título 3", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título 4", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título do Meu Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_child_care_black, "Título 1", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Barão de Maua", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Título Título Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título Título do Titudo", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Meu Teste de Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Teste do Título 1", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_child_care_black, "Título 1", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Título 3", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título 4", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título do Meu Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_child_care_black, "Título 1", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Barão de Maua", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Título 1", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Título Legal", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_android_black, "Meu Título", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_child_care_black, "Testando", "Minha descrição teste"));
-        list.add(new Model(R.drawable.ic_brightness_7_black, "Meu Teste Legal", "Minha descrição teste"));
+        for(int i =0; i < 1; i++)
+        {
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Título 1", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título Legal", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Meu Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_child_care_black, "Testando", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Meu Teste Legal", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título 2", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Título 3", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título 4", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título do Meu Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_child_care_black, "Título 1", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Barão de Maua", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Título Título Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título Título do Titudo", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Meu Teste de Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Teste do Título 1", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_child_care_black, "Título 1", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Título 3", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título 4", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título do Meu Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_child_care_black, "Título 1", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Barão de Maua", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Título 1", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Título Legal", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_assignment_ind_black, "Título do meu Teste", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_android_black, "Meu Título", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_child_care_black, "Testando", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Meu Teste Legal", "Minha descrição teste"));
+            list.add(new Model(R.drawable.ic_brightness_7_black, "Meu Teste Legal", "Minha descrição teste"));
+        }
     }
 }
