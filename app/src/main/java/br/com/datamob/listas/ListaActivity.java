@@ -90,7 +90,7 @@ public class ListaActivity extends AppCompatActivity
     private void criaLista()
     {
         list = new ArrayList<>();
-        for(int i =0; i < 1; i++)
+        for(int i =0; i < 2; i++)
         {
             list.add(new Model(R.drawable.ic_brightness_7_black, "Título 1", "Minha descrição teste"));
             list.add(new Model(R.drawable.ic_android_black, "Título Legal", "Minha descrição teste"));
